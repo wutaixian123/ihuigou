@@ -1,0 +1,832 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>回购网</title>
+<link href="css/new_css/global.css" rel="stylesheet" type="text/css">
+<link href="css/new_css/index.css" rel="stylesheet" type="text/css">
+<script src="js/new_js/jquery.js" type="text/javascript"></script>
+<script src="js/new_js/jquery.kinMaxShow-1.1.min.js" type="text/javascript"></script>
+<script src="js/new_js/lrtk.js" type="text/javascript"></script>
+<script src="js/new_js/menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function(){
+	$("#kinMaxShow").kinMaxShow({
+			height:348,
+			button:{
+					showIndex:false,
+					normal:{background:'url(images/new_images/tg_flash_p2.png) no-repeat 0 0',marginRight:'10px',border:'0',right:'42%',bottom:'17px'},
+					focus:{background:'url(images/new_images/tg_flash_p.png) no-repeat 0 0',border:'0'}
+				},
+			callback:function(index,action){
+				switch(index){
+				}
+			}
+		});
+});
+
+</script>
+<script type="text/javascript">
+function nTabs(thisObj,Num){
+    if(thisObj.className == "active")return;
+    var tabObj = thisObj.parentNode.id;
+    var tabList = document.getElementById(tabObj).getElementsByTagName("li");
+    for(i=0; i <tabList.length; i++)
+    {       
+        if (i == Num)
+        {   
+            thisObj.className = "active";
+            document.getElementById(tabObj+"_Content"+i).style.display = "block";
+        }else{
+            tabList[i].className = "normal";
+            document.getElementById(tabObj+"_Content"+i).style.display = "none";
+        }
+    }
+}
+function show_king_list_new(obj,pid){
+	$("#"+pid).find("dl").attr('class','bg');
+	$(obj).attr('class','');
+}
+
+</script>
+</head>
+
+<body>
+<!--头部-->
+<div class="shortcut">
+  <div class="page2">
+    <div class="shortcut-left">
+      <ul>
+        <li class="item-more"><a href="javascript:void(0)"><span>&nbsp;</span><em>手机逛回购</em></a>
+          <div class="sub-nav">
+            <div><img src="images/new_images/shortcut_wx.gif" width="145" height="145" /></div>
+            <div>扫描下载手机客户端</div>
+          </div>
+        </li>
+        <li class="city"><span>当前：<span>广东省深圳市</span><a href="#">[切换城市]</a></span></li>
+      </ul>
+    </div>
+    <div class="shortcut-right">
+      <ul>
+        <li><a href="#">登录</a></li>
+        <li><a href="#">注册</a></li>
+        <li class="my-cart"><a href="#"><em>我的回购</em></a>
+          <div class="sub-cart"> <a href="#">我的订单</a> <a href="#">帐户中心</a> <a href="#">环保券<i>2</i>张</a> <a href="#">退出</a> </div>
+        </li>
+        <li class="item-daohang"><a href="#" class="item-daohang-nav">网站导航</a>
+          <div class="sub-nav2">
+             <ul>
+               <li>
+                 <dl>
+                   <dt>主要频道</dt>
+                   <dd><a href="#">旧机回收</a></dd>
+                   <dd><a href="#">以旧换新</a></dd>
+                   <dd><a href="#">二手优品</a></dd>
+                 </dl>
+               </li>
+               <li>
+                 <dl>
+                   <dt>企业服务</dt>
+                   <dd><a href="#">企业代理</a></dd>
+                   <dd><a href="#">校园代理</a></dd>
+                 </dl>
+               </li>
+               <li>
+                 <dl>
+                   <dt>客户服务</dt>
+                   <dd><a href="#">新手引导</a></dd>
+                   <dd><a href="#">服务条款</a></dd>
+                   <dd><a href="#">新手引导</a></dd>
+                   <dd><a href="#">投诉建议</a></dd>
+                   <dd><a href="#">在线客服</a></dd>
+                 </dl>
+               </li>
+               <div class="clear"></div>
+             </ul>
+            
+           </div>
+        </li>
+      </ul>
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>
+<div class="header">
+  <div class="page2">
+    <h1 class="logo"><a href="#"><img src="images/new_images/logo.png" width="179" height="52" /></a></h1><div class="day"><a href="#"><img src="images/new_images/day.gif" /></a></div>
+    <div class="nav"><a href="#"><span id="nav_xz">&nbsp;</span>闲置回收</a><a href="#"><span id="nav_hx">&nbsp;</span>旧机换新</a><a href="#" class="on"><span id="nav_es">&nbsp;</span>二手优品<i><img src="images/new_images/new.png" /></i></a></div>
+  </div>
+</div>
+<!--头部--> 
+<!--banner、搜索-->
+<div class="banner_box">
+  <div class="page2">
+    <div class="banner">
+      <div id="kinMaxShow">
+        <div><img src="images/new_images/banner.jpg"/></div>
+        <div><img src="images/new_images/banner.jpg" /></div>
+      </div>
+    </div>
+    <div class="paihangban fr">
+      <ul id="myTab" class="paihangban-qiehuan">
+        <li class="active" onclick="nTabs(this,0);">今日热抛</li>
+        <li class="normal" onclick="nTabs(this,1);">当周</li>
+        <li class="normal" id="nav_s3" onclick="nTabs(this,2);">当月</li>
+      </ul>
+      <div class="TabContent">
+        <div id="myTab_Content0">
+          <div class="star">
+            <dl onmouseover="show_king_list_new(this,'myTab_Content0');">
+              <dt class="sl01 s_img">1</dt>
+              <dt class="sl02"><a href="#"><img src="images/new_images/img5.jpg" width="80" height="60"/></a></dt>
+              <dd class="sl03"><a href="#">iPhone 5s(A1533国行电信）</a></dd>
+              <dd class="sl04">回收均价<strong>2850</strong>元</dd>
+              <dt class="clear"></dt>
+            </dl>
+            <dl class="bg" onmouseover="show_king_list_new(this,'myTab_Content0');">
+              <dt class="sl01">2</dt>
+              <dt class="sl02"><a href="#"><img src="images/new_images/img5.jpg" width="80" height="60"/></a></dt>
+              <dd class="sl03"><a href="#">iPhone 5s(A1533国行电信）</a></dd>
+              <dd class="sl04">回收均价<strong>2850</strong>元</dd>
+              <dt class="clear"></dt>
+            </dl>
+            <dl class="bg" onmouseover="show_king_list_new(this,'myTab_Content0');">
+              <dt class="sl01">3</dt>
+              <dt class="sl02"><a href="#"><img src="images/new_images/img5.jpg" width="80" height="60"/></a></dt>
+              <dd class="sl03"><a href="#">iPhone 5s(A1533国行电信）</a></dd>
+              <dd class="sl04">回收均价<strong>2850</strong>元</dd>
+              <dt class="clear"></dt>
+            </dl>
+            <dl class="bg" onmouseover="show_king_list_new(this,'myTab_Content0');">
+              <dt class="sl01 gray">4</dt>
+              <dt class="sl02"><a href="#"><img src="images/new_images/img5.jpg" width="80" height="60"/></a></dt>
+              <dd class="sl03"><a href="#">iPhone 5s(A1533国行电信）</a></dd>
+              <dd class="sl04">回收均价<strong>2850</strong>元</dd>
+              <dt class="clear"></dt>
+            </dl>
+            <dl class="bg" onmouseover="show_king_list_new(this,'myTab_Content0');">
+              <dt class="sl01 gray">5</dt>
+              <dt class="sl02"><a href="#"><img src="images/new_images/img5.jpg" width="80" height="60"/></a></dt>
+              <dd class="sl03"><a href="#">iPhone 5s(A1533国行电信）</a></dd>
+              <dd class="sl04">回收均价<strong>2850</strong>元</dd>
+            </dl>
+          </div>
+        </div>
+        <div class="none" id="myTab_Content1">
+          <div class="star">
+            <dl id="b1" onmouseover="show_king_list_new(this,'myTab_Content1');">
+              <dt class="sl01 s_img">1</dt>
+              <dt class="sl02"><a href="#"><img src="images/new_images/img5.jpg" width="80" height="60"/></a></dt>
+              <dd class="sl03"><a href="#">iPhone 5s(A1533国行电信）</a></dd>
+              <dd class="sl04">回收均价<strong>2850</strong>元</dd>
+              <dt class="clear"></dt>
+            </dl>
+            <dl class="bg" id="b2" onmouseover="show_king_list_new(this,'myTab_Content1');">
+              <dt class="sl01">2</dt>
+              <dt class="sl02"><a href="#"><img src="images/new_images/img5.jpg" width="80" height="60"/></a></dt>
+              <dd class="sl03"><a href="#">iPhone 5s(A1533国行电信）</a></dd>
+              <dd class="sl04">回收均价<strong>2850</strong>元</dd>
+              <dt class="clear"></dt>
+            </dl>
+            <dl class="bg" id="b3" onmouseover="show_king_list_new(this,'myTab_Content1');">
+              <dt class="sl01">3</dt>
+              <dt class="sl02"><a href="#"><img src="images/new_images/img5.jpg" width="80" height="60"/></a></dt>
+              <dd class="sl03"><a href="#">iPhone 5s(A1533国行电信）</a></dd>
+              <dd class="sl04">回收均价<strong>2850</strong>元</dd>
+              <dt class="clear"></dt>
+            </dl>
+            <dl class="bg" id="b4" onmouseover="show_king_list_new(this,'myTab_Content1');">
+              <dt class="sl01 gray">4</dt>
+              <dt class="sl02"><a href="#"><img src="images/new_images/img5.jpg" width="80" height="60"/></a></dt>
+              <dd class="sl03"><a href="#">iPhone 5s(A1533国行电信）</a></dd>
+              <dd class="sl04">回收均价<strong>2850</strong>元</dd>
+              <dt class="clear"></dt>
+            </dl>
+            <dl class="bg" id="b5" onmouseover="show_king_list_new(this,'myTab_Content1');">
+              <dt class="sl01 gray">5</dt>
+              <dt class="sl02"><a href="#"><img src="images/new_images/img5.jpg" width="80" height="60"/></a></dt>
+              <dd class="sl03"><a href="#">iPhone 5s(A1533国行电信）</a></dd>
+              <dd class="sl04">回收均价<strong>2850</strong>元</dd>
+            </dl>
+          </div>
+        </div>
+        <div class="none" id="myTab_Content2">
+          <div class="star" >
+            <dl id="c1" onmouseover="show_king_list_new(this,'myTab_Content2');">
+              <dt class="sl01 s_img">1</dt>
+              <dt class="sl02"><a href="#"><img src="images/new_images/img5.jpg" width="80" height="60"/></a></dt>
+              <dd class="sl03"><a href="#">iPhone 5s(A1533国行电信）</a></dd>
+              <dd class="sl04">回收均价<strong>2850</strong>元</dd>
+              <dt class="clear"></dt>
+            </dl>
+            <dl class="bg" id="c2" onmouseover="show_king_list_new(this,'myTab_Content2');">
+              <dt class="sl01">2</dt>
+              <dt class="sl02"><a href="#"><img src="images/new_images/img5.jpg" width="80" height="60"/></a></dt>
+              <dd class="sl03"><a href="#">iPhone 5s(A1533国行电信）</a></dd>
+              <dd class="sl04">回收均价<strong>2850</strong>元</dd>
+              <dt class="clear"></dt>
+            </dl>
+            <dl class="bg" id="c3" onmouseover="show_king_list_new(this,'myTab_Content2');">
+              <dt class="sl01">3</dt>
+              <dt class="sl02"><a href="#"><img src="images/new_images/img5.jpg" width="80" height="60"/></a></dt>
+              <dd class="sl03"><a href="#">iPhone 5s(A1533国行电信）</a></dd>
+              <dd class="sl04">回收均价<strong>2850</strong>元</dd>
+              <dt class="clear"></dt>
+            </dl>
+            <dl class="bg" id="c4" onmouseover="show_king_list_new(this,'myTab_Content2');">
+              <dt class="sl01 gray">4</dt>
+              <dt class="sl02"><a href="#"><img src="images/new_images/img5.jpg" width="80" height="60"/></a></dt>
+              <dd class="sl03"><a href="#">iPhone 5s(A1533国行电信）</a></dd>
+              <dd class="sl04">回收均价<strong>2850</strong>元</dd>
+              <dt class="clear"></dt>
+            </dl>
+            <dl class="bg" id="c5" onmouseover="show_king_list_new(this,'myTab_Content2');">
+              <dt class="sl01 gray">5</dt>
+              <dt class="sl02"><a href="#"><img src="images/new_images/img5.jpg" width="80" height="60"/></a></dt>
+              <dd class="sl03"><a href="#">iPhone 5s(A1533国行电信）</a></dd>
+              <dd class="sl04">回收均价<strong>2850</strong>元</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+      <div class="paihangban-more"><a href="#">查看更多</a></div>
+    </div>
+    <div class="clear"></div>
+    <div class="search-box">
+      <h2 class="search-title">搜一下，看看你的闲置还值多少钱</h2>
+      <div class="search">
+    <div class="search-fenlei" id="search-fenlei">
+	<div class="set" id="all_type">全部分类</div>
+	<ul class="search-list">
+		<li class="search-list-icon1"><a href="#">手机</a></li>
+        <li class="search-list-icon2"><a href="#">苹果系列</a></li>
+        <li class="search-list-icon3"><a href="#">平板电脑</a></li>
+        <li class="search-list-icon4"><a href="#">笔记本</a></li>
+        <li class="search-list-icon5"><a href="#">相机</a></li>
+        <li class="search-list-icon6"><a href="#">游戏机</a></li>
+	</ul>
+</div>
+
+<script type="text/javascript">
+$(function(){
+	$(".search-fenlei .set").click(function(){
+		var ul=$(".search-list");
+		if(ul.css("display")=="none"){
+			ul.slideDown();
+		}else{
+			ul.slideUp();
+		}
+	});
+	$(".search-fenlei li").click(function(){
+		var li=$(this).html();
+		$("#all_type").html(li);
+		$(".search-list").hide();
+		var arr	=	$(this).attr('class').split('-');
+		suff_class	=	arr[arr.length-1];
+		//alert(suff_class);
+		$("#search-fenlei").attr('class','search-fenlei-'+suff_class);
+		//$(".set").removeClass("select") ;   
+	});
+})
+</script>
+        
+        <input type="text" value="输入品牌或型号进行搜索" class="input-txt" />
+        <input type="button" value="" class="input-btn" />
+      </div>
+      <div class="search-hot">热门搜索：<a href="#">iPhone 4（黑/白）</a><a href="#">iPhone 4S（黑色）</a><a href="#">iPhone 4S（白色）</a></div>
+    </div>
+  </div>
+</div>
+<!--banner、搜索-->
+<div class="content page2"> 
+  <script>
+function _nav(name,id,total,is){
+	 
+	for(var i=1;i<=total;i++){
+		//alert(i);
+		if(!is){
+		document.getElementById(name+i).className='';
+		}
+		//alert(name+"_list"+i);
+		document.getElementById(name+"_list"+i).style.display='none';	
+	}
+	if(!is){
+	document.getElementById(name+id).className='on';
+	
+	}
+	document.getElementById(name+"_list"+id).style.display='block';	
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+  <div class="bar"><samp class="bar_icon1">&nbsp;</samp><span>伙伴们经常抛弃的机型</span></div>
+  <div class="list-box-l fl">
+    <div class="list-qiehuan"><a href="javascript:void(0)" class="on" id="nav1" onclick="_nav('nav',1,6)"><span>手机</span></a><a href="javascript:void(0)"id="nav2" onclick="_nav('nav',2,6)"><span>苹果系列</span></a><a href="javascript:void(0)" id="nav3" onclick="_nav('nav',3,6)"><span>平板电脑</span></a><a href="javascript:void(0)" id="nav4" onclick="_nav('nav',4,6)"><span>笔记本</span></a><a href="javascript:void(0)" id="nav5" onclick="_nav('nav',5,6)"><span>数码相机</span></a><a href="javascript:void(0)" id="nav6" class="no" onclick="_nav('nav',6,6)"><span>游戏机</span></a></div>
+    <dl class="machine_list" id="nav_list1">
+      <dd>
+        <p><a href="#"><img src="images/new_images/img1.jpg" width="264" height="197" /></a></p>
+        <p class="name">苹果 iPhone 5S</p>
+        <p class="price">回收均价<em>2450</em>元</p>
+        <div class="machine-gd">
+          <p class="pj">平均每小时回收<em>8</em>台</p>
+          <p class="xj">回收价比上月上涨<em>50</em>元</p>
+        </div>
+      </dd>
+      <dd>
+        <p><a href="#"><img src="images/new_images/img1.jpg" width="264" height="197" /></a></p>
+        <p class="name">苹果 iPhone 5S</p>
+        <p class="price">回收均价<em>2450</em>元</p>
+        <div class="machine-gd">
+          <p class="pj">平均每小时回收<em>8</em>台</p>
+          <p class="sz">回收价比上月上涨<em>50</em>元</p>
+        </div>
+      </dd>
+      <dd style="margin-right:0">
+        <p><a href="#"><img src="images/new_images/img1.jpg" width="264" height="197" /></a></p>
+        <p class="name">苹果 iPhone 5S</p>
+        <p class="price">回收均价<em>2450</em>元</p>
+        <div class="machine-gd">
+          <p class="pj">平均每小时回收<em>8</em>台</p>
+          <p class="sz">回收价比上月上涨<em>50</em>元</p>
+        </div>
+      </dd>
+      <dd>
+        <p><a href="#"><img src="images/new_images/img1.jpg" width="264" height="197" /></a></p>
+        <p class="name">苹果 iPhone 5S</p>
+        <p class="price">回收均价<em>2450</em>元</p>
+        <div class="machine-gd">
+          <p class="pj">平均每小时回收<em>8</em>台</p>
+          <p class="sz">回收价比上月上涨<em>50</em>元</p>
+        </div>
+      </dd>
+      <dd>
+        <p><a href="#"><img src="images/new_images/img1.jpg" width="264" height="197" /></a></p>
+        <p class="name">苹果 iPhone 5S</p>
+        <p class="price">回收均价<em>2450</em>元</p>
+        <div class="machine-gd">
+          <p class="pj">平均每小时回收<em>8</em>台</p>
+          <p class="sz">回收价比上月上涨<em>50</em>元</p>
+        </div>
+      </dd>
+      <dd style="margin-right:0">
+        <p><a href="#"><img src="images/new_images/img1.jpg" width="264" height="197" /></a></p>
+        <p class="name">苹果 iPhone 5S</p>
+        <p class="price">回收均价<em>2450</em>元</p>
+        <div class="machine-gd">
+          <p class="pj">平均每小时回收<em>8</em>台</p>
+          <p class="sz">回收价比上月上涨<em>50</em>元</p>
+        </div>
+      </dd>
+      <dt class="clear"></dt>
+    </dl>
+    <dl class="machine_list" id="nav_list2" style="display:none">
+      2
+    </dl>
+    <dl class="machine_list" id="nav_list3" style="display:none">
+      3
+    </dl>
+    <dl class="machine_list" id="nav_list4" style="display:none">
+      4
+    </dl>
+    <dl class="machine_list" id="nav_list5" style="display:none">
+      5
+    </dl>
+    <dl class="machine_list" id="nav_list6" style="display:none">
+      6
+    </dl>
+  </div>
+  <!--正在交易、用户评论-->
+  <div class="list-box-r fr">
+    <div class="list-box-title"><span class="list-icon1">正在交易</span></div>
+    <dl class="list-box-dl">
+      <dd><img src="images/new_images/img2.jpg" width="99" height="74" class="list-img"/>
+        <ul>
+          <li>132****5565 <span>7分钟前</span> </li>
+          <li>成功回购<samp>iPhone 5s</samp></li>
+          <li>回购价：2900</li>
+        </ul>
+        <div class="clear"></div>
+      </dd>
+      <dd><img src="images/new_images/img2.jpg" width="99" height="74" class="list-img"/>
+        <ul>
+          <li>132****5565 <span>7分钟前</span> </li>
+          <li>成功回购<samp>iPhone 5s</samp></li>
+          <li>回购价：2900</li>
+        </ul>
+        <div class="clear"></div>
+      </dd>
+      <dd><img src="images/new_images/img2.jpg" width="99" height="74" class="list-img"/>
+        <ul>
+          <li>132****5565 <span>7分钟前</span> </li>
+          <li>成功回购<samp>iPhone 5s</samp></li>
+          <li>回购价：2900</li>
+        </ul>
+        <div class="clear"></div>
+      </dd>
+      <dd style="border:none"><img src="images/new_images/img2.jpg" width="99" height="74" class="list-img"/>
+        <ul>
+          <li>132****5565 <span>7分钟前</span> </li>
+          <li>成功回购<samp>iPhone 5ssdfsdfsdf</samp></li>
+          <li>回购价：2900</li>
+        </ul>
+        <div class="clear"></div>
+      </dd>
+    </dl>
+    <div class="list-box-title"><span class="list-icon2">用户评价</span><a href="#">更多评价</a></div>
+    <dl class="list-box-dl2">
+      <dd>
+        <div class="list-box-bar"><span>132****5565 &nbsp;&nbsp;回款速度：</span><img src="images/new_images/star1.gif" /><img src="images/new_images/star1.gif" /><img src="images/new_images/star1.gif" /><img src="images/new_images/star2.gif" /><img src="images/new_images/star2.gif" /></div>
+        <p>第二台在这回购了，这次汇款的速度太给
+          力了，上午收到货，下午就打款</p>
+      </dd>
+      <dd>
+        <div class="list-box-bar"><span>132****5565 &nbsp;&nbsp;回款速度：</span><img src="images/new_images/star1.gif" /><img src="images/new_images/star1.gif" /><img src="images/new_images/star1.gif" /><img src="images/new_images/star2.gif" /><img src="images/new_images/star2.gif" /></div>
+        <p>第二台在这回购了，这次汇款的速度太给
+          力了，上午收到货，下午就打款</p>
+      </dd>
+      <dd style="border:none">
+        <div class="list-box-bar"><span>132****5565 &nbsp;&nbsp;回款速度：</span><img src="images/new_images/star1.gif" /><img src="images/new_images/star1.gif" /><img src="images/new_images/star1.gif" /><img src="images/new_images/star2.gif" /><img src="images/new_images/star2.gif" /></div>
+        <p>第二台在这回购了，这次汇款的速度太给
+          力了，上午收到货，下午就打款</p>
+      </dd>
+    </dl>
+  </div>
+  <!--正在交易、用户评论-->
+  <div class="clear"></div>
+  <div class="check"><a href="#">查看更多机型</a></div>
+  <div class="bar"><samp class="bar_icon2">&nbsp;</samp><span>4年他说</span></div>
+  <!--用户说-->
+  <div class="consumer">
+    <div class="consumer-title"><span>用户说</span><a href="#">查看全部</a><samp><i>523020</i>名用户<strong>50W</strong>条好评</samp></div>
+    <div class="consumer-qiehuan"><a href="javascript:void(0)" class="on" id="nav_h1" onclick="_nav('nav_h',1,3)">&nbsp;</a><a href="javascript:void(0)"id="nav_h2" onclick="_nav('nav_h',2,3)">&nbsp;</a><a href="javascript:void(0)" id="nav_h3" onclick="_nav('nav_h',3,3)">&nbsp;</a></div>
+    <dl class="consumer-list" id="nav_h_list1">
+      <dd>
+        <div class="consumer-img"><img src="images/new_images/img12.gif" width="54" height="54" /></div>
+        <div class="consumer-txt"> 七秒记忆的鱼<img src="images/new_images/star3.gif" />：
+          <p><em>#要回收就上回购网#</em>第二台在这回购了，这次汇款的速度太给力了，上午收到货，下午
+            就打款了<img src="images/new_images/bq1.gif" style="vertical-align:top" /><img src="images/new_images/bq1.gif" style="vertical-align:top"  /><img src="images/new_images/bq2.gif"  style="vertical-align:top" /></p>
+          <div class="consumer-pic"><a href="#"><img src="images/new_images/img13.gif" /></a><a href="#"><img src="images/new_images/img14.gif" /></a><a href="#"><img src="images/new_images/img15.gif" /></a></div>
+        </div>
+        <div class="clear"></div>
+      </dd>
+      <dd>
+        <div class="consumer-img"><img src="images/new_images/img12.gif" width="54" height="54" /></div>
+        <div class="consumer-txt"> 七秒记忆的鱼<img src="images/new_images/star3.gif" />：
+          <p><em>#要回收就上回购网#</em>第二台在这回购了，这次汇款的速度太给力了，上午收到货，下午
+            就打款了<img src="images/new_images/bq1.gif" style="vertical-align:top" /><img src="images/new_images/bq1.gif" style="vertical-align:top"  /><img src="images/new_images/bq2.gif"  style="vertical-align:top" /></p>
+        </div>
+        <div class="clear"></div>
+      </dd>
+      <dd>
+        <div class="consumer-img"><img src="images/new_images/img12.gif" width="54" height="54" /></div>
+        <div class="consumer-txt">
+          <div class="consumer-name">七秒记忆的鱼<img src="images/new_images/star3.gif" />：</div>
+          <p><em>#要回收就上回购网#</em>第二台在这回购了，这次汇款的速度太给力了，上午收到货，下午
+            就打款了<img src="images/new_images/bq1.gif" style="vertical-align:top" /><img src="images/new_images/bq1.gif" style="vertical-align:top"  /><img src="images/new_images/bq2.gif"  style="vertical-align:top" /></p>
+        </div>
+        <div class="clear"></div>
+      </dd>
+    </dl>
+    <dl class="consumer-list" id="nav_h_list2" style="display:none">
+      <dd>
+        <div class="consumer-img"><img src="images/new_images/img12.gif" width="54" height="54" /></div>
+        <div class="consumer-txt"> 七秒记忆的鱼<img src="images/new_images/star3.gif" />：
+          <p><em>#要回收就上回购网#</em>第二台在这回购了，这次汇款的速度太给力了，上午收到货，下午
+            就打款了<img src="images/new_images/bq1.gif" style="vertical-align:top" /><img src="images/new_images/bq1.gif" style="vertical-align:top"  /><img src="images/new_images/bq2.gif"  style="vertical-align:top" /></p>
+          <div class="consumer-pic"><img src="images/new_images/img13.gif" /><img src="images/new_images/img14.gif" /><img src="images/new_images/img15.gif" /></div>
+        </div>
+        <div class="clear"></div>
+      </dd>
+      <dd>
+        <div class="consumer-img"><img src="images/new_images/img12.gif" width="54" height="54" /></div>
+        <div class="consumer-txt"> 火星人爱地球<img src="images/new_images/star3.gif" />：
+          <p><em>#要回收就上回购网#</em>第二台在这回购了，这次汇款的速度太给力了，上午收到货，下午
+            就打款了<img src="images/new_images/bq1.gif" style="vertical-align:top" /><img src="images/new_images/bq1.gif" style="vertical-align:top"  /><img src="images/new_images/bq2.gif"  style="vertical-align:top" /></p>
+        </div>
+        <div class="clear"></div>
+      </dd>
+      <dd>
+        <div class="consumer-img"><img src="images/new_images/img12.gif" width="54" height="54" /></div>
+        <div class="consumer-txt">
+          <div class="consumer-name">火星人爱地球<img src="images/new_images/star3.gif" />：</div>
+          <p><em>#要回收就上回购网#</em>第二台在这回购了，这次汇款的速度太给力了，上午收到货，下午
+            就打款了<img src="images/new_images/bq1.gif" style="vertical-align:top" /><img src="images/new_images/bq1.gif" style="vertical-align:top"  /><img src="images/new_images/bq2.gif"  style="vertical-align:top" /></p>
+        </div>
+        <div class="clear"></div>
+      </dd>
+    </dl>
+    <dl class="consumer-list" id="nav_h_list3" style="display:none">
+      <dd>
+        <div class="consumer-img"><img src="images/new_images/img12.gif" width="54" height="54" /></div>
+        <div class="consumer-txt"> 七秒记忆的鱼<img src="images/new_images/star3.gif" />：
+          <p><em>#要回收就上回购网#</em>第二台在这回购了，这次汇款的速度太给力了，上午收到货，下午
+            就打款了<img src="images/new_images/bq1.gif" style="vertical-align:top" /><img src="images/new_images/bq1.gif" style="vertical-align:top"  /><img src="images/new_images/bq2.gif"  style="vertical-align:top" /></p>
+          <div class="consumer-pic"><img src="images/new_images/img13.gif" /><img src="images/new_images/img14.gif" /><img src="images/new_images/img15.gif" /></div>
+        </div>
+        <div class="clear"></div>
+      </dd>
+      <dd>
+        <div class="consumer-img"><img src="images/new_images/img12.gif" width="54" height="54" /></div>
+        <div class="consumer-txt"> 火星人爱地球<img src="images/new_images/star3.gif" />：
+          <p><em>#要回收就上回购网#</em>第二台在这回购了，这次汇款的速度太给力了，上午收到货，下午
+            就打款了<img src="images/new_images/bq1.gif" style="vertical-align:top" /><img src="images/new_images/bq1.gif" style="vertical-align:top"  /><img src="images/new_images/bq2.gif"  style="vertical-align:top" /></p>
+        </div>
+        <div class="clear"></div>
+      </dd>
+      <dd>
+        <div class="consumer-img"><img src="images/new_images/img12.gif" width="54" height="54" /></div>
+        <div class="consumer-txt">
+          <div class="consumer-name">七秒记忆的鱼<img src="images/new_images/star3.gif" />：</div>
+          <p><em>#要回收就上回购网#</em>第二台在这回购了，这次汇款的速度太给力了，上午收到货，下午
+            就打款了<img src="images/new_images/bq1.gif" style="vertical-align:top" /><img src="images/new_images/bq1.gif" style="vertical-align:top"  /><img src="images/new_images/bq2.gif"  style="vertical-align:top" /></p>
+        </div>
+        <div class="clear"></div>
+      </dd>
+    </dl>
+  </div>
+  <!--用户说--> 
+  <!--视频-->
+  <div class="video"><img src="images/new_images/video.gif" width="450" height="370" /></div>
+  <!--视频-->
+  <div class="clear"></div>
+  <!--媒体说-->
+  <div class="bar2"><span>媒体说</span></div>
+  <dl class="medium">
+    <dd><img src="images/new_images/img7.gif" />
+      <div class="medium-txt"><span><strong>新浪网</strong>报道</span>
+        <p>手机回收趋势，回购网引领国内环保回收</p>
+      </div>
+    </dd>
+    <dd><img src="images/new_images/img8.gif" />
+      <div class="medium-txt"><span><strong>新浪网</strong>报道</span>
+        <p>手机回收趋势，回购网引领国内环保回收</p>
+      </div>
+    </dd>
+    <dd><img src="images/new_images/img9.gif" />
+      <div class="medium-txt"><span><strong>新浪网</strong>报道</span>
+        <p>手机回收趋势，回购网引领国内环保回收</p>
+      </div>
+    </dd>
+    <dd style="margin-right:0"><img src="images/new_images/img10.gif" />
+      <div class="medium-txt"><span><strong>新浪网</strong>报道</span>
+        <p>手机回收趋势，回购网引领国内环保回收</p>
+      </div>
+    </dd>
+    <dd><img src="images/new_images/img7.gif" />
+      <div class="medium-txt"><span><strong>新浪网</strong>报道</span>
+        <p>手机回收趋势，回购网引领国内环保回收</p>
+      </div>
+    </dd>
+    <dd><img src="images/new_images/img8.gif" />
+      <div class="medium-txt"><span><strong>新浪网</strong>报道</span>
+        <p>手机回收趋势，回购网引领国内环保回收</p>
+      </div>
+    </dd>
+    <dd><img src="images/new_images/img9.gif" />
+      <div class="medium-txt"><span><strong>新浪网</strong>报道</span>
+        <p>手机回收趋势，回购网引领国内环保回收</p>
+      </div>
+    </dd>
+    <dt class="medium-last"><a href="#">这仅是冰山一角</a></dt>
+    <dt class="clear"></dt>
+  </dl>
+  <!--媒体说--> 
+  <!--回购轨迹-->
+  <div class="bar"><samp class="bar_icon3">&nbsp;</samp><span>回购轨迹</span></div>
+  <div class="pic-box">
+    <div class="picbox">
+      <ul class="piclist mainlist">
+        <li><a href="#"><img src="images/new_images/img3.jpg" width="266" height="354"/></a></li>
+        <li><a href="#"><img src="images/new_images/img3.jpg" width="266" height="354"/></a></li>
+        <li><a href="#"><img src="images/new_images/img3.jpg" width="266" height="354"/></a></li>
+        <li><a href="#"><img src="images/new_images/img3.jpg" width="266" height="354"/></a></li>
+        <li><a href="#"><img src="images/new_images/img3.jpg" width="266" height="354"/></a></li>
+      </ul>
+      <ul class="piclist swaplist">
+      </ul>
+    </div>
+    <div class="og_prev"></div>
+    <div class="og_next"></div>
+  </div>
+  <div class="repurchase"> 
+    <!--回购网动态-->
+    <div class="repurchase-l">
+      <div class="repurchase-title"><span>回购网动态</span></div>
+      <dl>
+        <dd><span>10-16</span><a href="#">被世人“忽视”，二手手机回收数量飙升的回收数量飙升的... </a></dd>
+        <dd><span>10-16</span><a href="#">被世人“忽视”，二手手机回收数量飙升的回收数量飙升的... </a></dd>
+        <dd><span>10-16</span><a href="#">被世人“忽视”，二手手机回收数量飙升的回收数量飙升的... </a></dd>
+        <dd><span>10-16</span><a href="#">被世人“忽视”，二手手机回收数量飙升的回收数量飙升的... </a></dd>
+        <dd><span>10-16</span><a href="#">被世人“忽视”，二手手机回收数量飙升的回收数量飙升的... </a></dd>
+        <dt><a href="#">查看更多  ></a></dt>
+      </dl>
+    </div>
+    <!--回购网动态--> 
+    <!--专业质检-->
+    <div class="repurchase-c">
+      <div class="repurchase-title"><span>专业质检</span></div>
+      <div class="repurchase-qiehuan"><a href="javascript:void(0)" class="on" id="nav_t1" onclick="_nav('nav_t',1,6)">&nbsp;</a><a href="javascript:void(0)"id="nav_t2" onclick="_nav('nav_t',2,6)">&nbsp;</a><a href="javascript:void(0)" id="nav_t3" onclick="_nav('nav_t',3,6)">&nbsp;</a><a href="javascript:void(0)" id="nav_t4" onclick="_nav('nav_t',4,6)">&nbsp;</a><a href="javascript:void(0)" id="nav_t5" onclick="_nav('nav_t',5,6)">&nbsp;</a><a href="javascript:void(0)" id="nav_t6" onclick="_nav('nav_t',6,6)">&nbsp;</a></div>
+      <div class="repurchase-list" id="nav_t_list1">
+        <div class="repurchase-arrow"><img src="images/new_images/icon1.jpg" width="19" height="26" /></div>
+        <h2>外观成色 </h2>
+        <p><img src="images/new_images/img4.jpg" /></p>
+        <div class="repurchase-txt">
+          <p>外观成色说明外观成色说明外观成色说明外观成色说明外观成色说明外观成色说明外观成色说明外观成色说明外观成色说明外观成色说明</p>
+        </div>
+        <div class="repurchase-more"><a href="#">查看更多  ></a></div>
+      </div>
+      <div class="repurchase-list" id="nav_t_list2" style="display:none">
+        <div class="repurchase-arrow"><img src="images/new_images/icon1.jpg" width="19" height="26" /></div>
+      </div>
+      <div class="repurchase-list" id="nav_t_list3" style="display:none">
+        <div class="repurchase-arrow"><img src="images/new_images/icon1.jpg" width="19" height="26" /></div>
+      </div>
+      <div class="repurchase-list" id="nav_t_list4" style="display:none">
+        <div class="repurchase-arrow"><img src="images/new_images/icon1.jpg" width="19" height="26" /></div>
+      </div>
+      <div class="repurchase-list" id="nav_t_list5" style="display:none">
+        <div class="repurchase-arrow"><img src="images/new_images/icon1.jpg" width="19" height="26" /></div>
+      </div>
+      <div class="repurchase-list" id="nav_t_list6" style="display:none">
+        <div class="repurchase-arrow"><img src="images/new_images/icon1.jpg" width="19" height="26" /></div>
+      </div>
+    </div>
+    <!--专业质检--> 
+    <!--回购网课堂-->
+    <div class="repurchase-r">
+      <div class="repurchase-title"><span>回购课堂</span></div>
+      <div class="repurchase-img"><img src="images/new_images/img11.gif" width="164" height="90" /></div>
+      <dl>
+        <dd><a href="#">手机回收专业质检Tips</a></dd>
+        <dd><a href="#">手机回收专业质检Tips</a></dd>
+        <dd><a href="#">手机回收专业质检Tips</a></dd>
+        <dd><a href="#">手机回收专业质检Tips</a></dd>
+        <dd><a href="#">手机回收专业质检Tips</a></dd>
+        <dt><a href="#">进入帮助中心 ></a></dt>
+      </dl>
+    </div>
+    <!--回购网课堂-->
+    <div class="clear"></div>
+  </div>
+  <div class="clear"></div>
+  <!--回购轨迹-->
+  <div class="bar"><samp class="bar_icon4">&nbsp;</samp><span>深度合作，他们与我们同行</span><a href="#"> + 合作申请</a></div>
+  <!--大客户入口-->
+  <div class="rukou"><a href="#"><img src="images/new_images/rukou.gif" width="450" height="224" /></a></div>
+  <!--大客户入口--> 
+  <!--友情链接-->
+  <dl class="link">
+    <dd><img src="images/new_images/img1.gif" /></dd>
+    <dd><img src="images/new_images/img2.gif" /></dd>
+    <dd><img src="images/new_images/img3.gif" /></dd>
+    <dd><img src="images/new_images/img4.gif" /></dd>
+    <dd><img src="images/new_images/img5.gif" /></dd>
+    <dd><img src="images/new_images/img6.gif" /></dd>
+    <dt class="clear"></dt>
+    <dt class="link-title">感恩陪伴回购网一路过来的你，期待下一个的你出现</dt>
+  </dl>
+  <!--友情链接-->
+  <div class="clear"></div>
+  <div class="ad_banner"><img src="images/new_images/ad_banner.jpg" /></div>
+  <!--保障-->
+  <dl class="security">
+    <dd class="security1">
+      <div class="security_icon1"></div>
+      <div class="security_txt">
+        <h2>价保无忧</h2>
+        <p>72小时价格保护</p>
+      </div>
+      <div class="clear"></div>
+    </dd>
+    <dd class="security2">
+      <div class="security_icon2"></div>
+      <div class="security_txt">
+        <h2>极速返款</h2>
+        <p>当天回购次日返款</p>
+      </div>
+      <div class="clear"></div>
+    </dd>
+    <dd  class="security3">
+      <div class="security_icon3"></div>
+      <div class="security_txt">
+        <h2>优质服务</h2>
+        <p>一对一专业服务</p>
+      </div>
+      <div class="clear"></div>
+    </dd>
+    <dd class="security4">
+      <div class="security_icon4"></div>
+      <div class="security_txt">
+        <h2>数据清除</h2>
+        <p>放心回购，数据不留痕</p>
+      </div>
+      <div class="clear"></div>
+    </dd>
+    <dt class="clear"></dt>
+  </dl>
+  <!--保障--> 
+</div>
+<div class="clear"></div>
+<div class="footer">
+  <div class="page2">
+    <dl class="foot_list1">
+      <dt>关于我们</dt>
+      <dd><a href="#">关于回购网</a></dd>
+      <dd><a href="#">联系我们</a></dd>
+      <dd><a href="#">人才招聘</a></dd>
+    </dl>
+    <dl class="foot_list2">
+      <dt>服务</dt>
+      <dd><a href="#">服务条款</a></dd>
+      <dd><a href="#">投诉建议</a></dd>
+      <dd><a href="#">网站地图</a></dd>
+    </dl>
+    <dl class="foot_list3">
+      <dt>客服热线</dt>
+      <dd>
+        <p><img src="images/new_images/tel.png" /></p>
+        <div><a href="#" class="rk1">大客户入口</a><a href="#" class="rk2">合作商入口</a></div>
+      </dd>
+    </dl>
+    <script type="text/javascript">
+                $(document).ready(function () {
+					$(".weixin2").hover(function () {
+                        $(this).find(".weixin-qrcode2").show();
+                    }, function () {
+                        $(this).find(".weixin-qrcode2").hide();
+                    });
+					$(".sina").hover(function () {
+                        $(this).find(".weixin-qrcode3").show();
+                    }, function () {
+                        $(this).find(".weixin-qrcode3").hide();
+                    });
+                });
+            </script>
+    <dl class="foot_list4">
+      <dt>关注我们</dt>
+      <dd class="sina"><a href="#">&nbsp;</a></dd>
+      <dd class="tecent"><a href="#">&nbsp;</a></dd>
+      <dd class="weixin"><a href="#" class="weixin2"><div class="weixin-qrcode2"></div></a></dd>
+    </dl>
+    <div class="clear"></div>
+    <div class="friend_link"><span>友情链接</span><a href="#">中关村在线</a><a href="#">安徽电信</a><a href="#">百脑汇</a><a href="#">太平洋二手论坛</a></div>
+    <div class="statist">
+      <p><em>2009-2014 Copyright Reserved 2009-2014 @</em>版权归回购网所有ICP备案：<span>粤ICP备10071783号</span><a href="#">站长统计</a></p>
+      <div> <a href="#"><img src="images/new_images/static_icon1.jpg" width="146" height="51"/></a><a href="#"><img src="images/new_images/static_icon2.jpg" width="146" height="51"/></a><a href="#"><img src="images/new_images/static_icon3.jpg" width="146" height="51" /></a><a href="#"><img src="images/new_images/static_icon4.jpg" width="139" height="49" /></a><a href="#"><img src="images/new_images/static_icon5.jpg" width="124" height="47"/></a></div>
+    </div>
+  </div>
+</div>
+
+
+<div class="mark"></div>
+<div class="suning">
+<img src="images/new_images/close-btn.png" class="su-btn" />
+<img src="images/new_images/suning.png" />
+
+<p style="margin-top:20px;"><a href="http://www.baidu.com" target="_blank"><img src="images/new_images/hongbao.png" /></a></p></div>
+<script>
+ $(function(){
+	 $(".mark").css("height",$(document).height());
+	$(".mark").css("width",$(document).width());
+	
+	 $(".su-btn").click(function(){
+		$(".suning").hide();
+		$(".mark").hide();
+		
+		})
+	 $("p").click(function(){
+		$(".suning").hide();
+		$(".mark").hide();
+		
+		})
+	 
+	 })
+</script>
+<!--[if lte IE 6]>
+<script src="js/new_js/png.js" type="text/javascript"></script>
+<script type="text/javascript">
+	DD_belatedPNG.fix('img,.banner ul, li, dl, dt, dd, span, em, div, i, samp, a, b, .kuang');
+</script>
+<![endif]-->
+</body>
+</html>

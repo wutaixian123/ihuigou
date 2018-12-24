@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+.login{ width:502px; height:530px; background:#fff}
+.zhuce{ width:502px; height:570px; background:#fff}
+.landing-title{ height:44px; line-height:44px; border-bottom:1px solid #e5e5e5; padding:0 0 0 30px; position:relative}
+.landing-title span{ font-size:16px; color:#000}
+.landing-title a{ position:absolute; right:12px; top:12px}
+.landing-Coope{ height:128px; border-bottom:1px solid #e5e5e5; margin:0 20px;}
+.landing-Coope p{ height:28px; padding:15px 0 0 0; font-size:13px; color:#999}
+
+.landing-box{}
+.landing-box dl{}
+.landing-box dd{ height:38px; width:100%}
+.landing-box dd input{ font-family:"微软雅黑"}
+.landing-box dd span{ font-size:14px; color:#999; text-align:right; float:left; width:64px; padding-right:20px; height:36px; line-height:36px; display:inline-block}
+.landing-box dd .landing-txt1{ float:left; height:36px; line-height:36px; border:1px solid #e3e3e3; width:305px; background:#fff url(../../images/new_images/landing_icon1.gif) no-repeat 278px center; border-radius:3px;}
+.landing-box dd .landing-txt2{ float:left; height:36px; line-height:36px; border:1px solid #e3e3e3; width:305px; background:#fff url(../../images/new_images/landing_icon2.gif) no-repeat 278px center; border-radius:3px;}
+.landing-box dd .landing-txt3{ float:left; height:36px; line-height:36px; border:1px solid #e3e3e3; width:305px; background:#fff url(../../images/new_images/landing_icon3.gif) no-repeat 278px center; border-radius:3px;}
+
+.landing-box dd .landing-btn1{ width:307px; height:38px; background:#ff8000; font-size:18px; color:#fff; border:none; border-radius:5px; float:left}
+.landing-box dd .landing-btn2{ width:305px; height:36px; background:#f9f7f3; font-size:18px; color:#666;  border:1px solid #e3e3e3; border-radius:5px; float:left}
+.landing-title2{ height:45px; line-height:45px; font-size:14px; color:#999; margin-bottom:16px; text-indent:30px;}
+.landing-box dd.landing-check{ height:28px; margin-bottom:0 !important; clear:both; font-size:14px; color:#999}
+.landing-box dd.landing-check a{ color:#999; margin-left:120px}
+.landing-box dd.landing-check span{ height:28px;}
+.landing-error{ padding:10px; color:#f00; line-height:30px; text-align:center; height:30px; margin:0 30px; margin-top:12px;}
+.landing-txt4{ line-height:34px; font-size:16px; color:#999; padding:0 0 0 192px}
+.landing-txt4 a{ text-decoration:underline; color:#999}
+.landing-txt5{ height:22px; line-height:22px; padding:0 0 0 84px; color:#f00; font-weight:bold}

@@ -1,0 +1,87 @@
+@charset "utf-8";
+/* CSS Document */
+
+.container{ background:#ececec; padding-top:20px; padding-bottom:20px}
+.special{ width:900px; margin:0 auto; border-left:1px solid #0b0306; padding-left:9px; padding-bottom:20px;}
+.special dt{ background:url(../../images/new_images/time_ico_bg.png) no-repeat; height:26px; line-height:26px; color:#fff; margin-bottom:10px; margin-left:-13px;}
+.special dt span{ background:url(../../images/new_images/time_ico.png) no-repeat 8px center; padding-left:28px; display:block}
+.special dd{ width:900px; height:348px; position:relative;}
+.special dd span{ width:100%; display:block; height:50px; color:#fff; line-height:50px; font-size:16px; position:absolute; left:0; top:0; z-index:1; background:url(../../images/new_images/time_ico2.png) repeat; text-indent:20px;}
+.special dt.next{ background:url(../../images/new_images/time_ico_bg2.png) no-repeat;}
+.special dt.end{ background:url(../../images/new_images/time_ico_bg3.png) no-repeat; color:#000}
+.special dt.end span{ background:url(../../images/new_images/time_ico3.png) no-repeat 8px center;}
+#menu{ position:fixed; left:100px; top:150px;}
+.list_head{ width:118px; border:1px solid #f36948; line-height:80px; font-size:18px; text-align:center; cursor:pointer; border-bottom:none}
+.list_head li{ height:80px;border-bottom:1px solid #f36948; color:#f36948 }
+.list_head li span{ background:url(../../images/new_images/time_ico4.png) no-repeat; width:9px; height:11px; position:absolute; right:-9px; top:30px; display:none}
+.special_dd{ margin-bottom:20px;}
+.list_head li a{ display:block; height:80px; position:relative;}
+.list_head li a.cur{color:#fff; background:#f36948}
+.list_head li a.cur span{ display:block;}
+
+.special-title{ text-align:center; font-size:22px; color:#f36948; line-height:70px;}
+.special_list{ width:900px; margin:0 auto; font-size:14px; color:#000; line-height:22px;}
+.special_list dd{ width:280px; float:left; height:358px; background:#fff; margin:0 10px; overflow:hidden; position:relative}
+.special_list dd p{ padding:6px 0 0 18px}
+.special_list dd p b{ color:red; font-size:16px;}
+.special_box{ width:280px; height:190px; position:absolute; background:url(../../images/new_images/time_ico5.png) repeat; text-align:center; color:#fff; font-size:20px; padding-top:90px; left:-280px; top:0}
+.special_box p{ line-height:26px}
+.special_box a{ display:inline-block; color:#f36948; font-size:16px; border:4px solid #f36948; padding:6px 8px; margin-top:12px}
+.special-title2{ text-align:center; font-size:22px; color:#000; line-height:70px;}
+.special_box a.white{ border-color:#fff; color:#fff}
+.special_box span{ background:#252525; color:#fff; border-radius:100px; width:140px; height:110px; padding-top:30px; display:block; margin:0 auto}
+.special_pa{ padding-top:70px; height:210px;}
+.special_box span a{ border:none; color:#fff; margin-top:0}
+
+
+
+.banner{ background:url(../../images/new_images/banner5.jpg) no-repeat center top; height:140px;} 
+.sp_order{ width:1094px; margin:0 auto; padding:20px 0 0 0}
+.sp_box{ background:#fff; padding:16px 0; margin-top:10px; border:1px solid #ddd;}
+.sp_img{ width:280px; height:280px; float:left; margin:0 80px 0 180px; display:inline}
+.sp_img img{ width:278px; height:278px; border:1px solid #ddd;}
+.sp_txt{ width:450px; float:left; padding-top:20px;}
+.sp_txt h2{ font-size:20px; color:#666; line-height:30px;}
+.sp_price{ line-height:44px;}
+.sp_price span{font-size:14px; width:70px; display:inline-block }
+.sp_price em{ font-size:16px; color:#ff3366}
+.sp_price b{ font-size:22px; color:#ff3366}
+
+.sp_address{ background:url(../../images/new_images/home_ico.jpg) no-repeat left 0px; padding-left:42px;}
+.sp_address select{ margin-bottom:4px; height:24px; width:80px}
+.sp_address span{ padding:0 6px;}
+.sp_phone{ background:url(../../images/new_images/phone_ico.jpg) no-repeat left 0px;padding-left:42px; height:26px; margin:15px 0 27px 0}
+.sp_input{ width:327px; height:24px; border:1px solid #ddd; text-indent:12px}
+.sp_btn{ background:#ff3366; color:#fff; width:134px; height:32px; text-align:center; line-height:32px; border:none; border-radius:6px;}
+.sp_right{ background:url(../../images/new_images/sp_right.jpg) no-repeat; width:186px; height:80px; margin:0 auto; color:#fff; font-size:14px; line-height:18px; padding:30px 20px 0 115px; margin:60px auto}
+
+
+.sucess{ background:#fff;  padding:32px 92px 40px 92px; margin-bottom:11px; margin-top:12px}
+.sucess_gongxi{background:url(../../images/new_images/gou2.gif) no-repeat; padding:0 0 33px 77px; font-size:14px; color:#333;}
+.sucess_gongxi p{ font-size:16px; line-height:24px;}
+.sucess_gongxi em{ font-size:14px; color:#666}
+.sucess_btn{ margin-top:35px; height:38px;}
+.sucess_btn .input_btn1{ line-height:36px; color:#fff; font-size:14px; background:#ff5d7f; border:1px solid #ff5d7f; border-radius:6px; padding:0 58px; cursor:pointer;}
+.sucess_btn .input_btn2{ line-height:36px; color:#ff5d7f; font-size:14px; background:#fff; border:1px solid #ff5d7f; border-radius:6px; padding:0 58px; cursor:pointer;}
+.sucess_pay{ font-size:14px; height:35px;}
+.sucess_pay em{ font-size:16px; color:#ff5d7f}
+.sucess_box{ background:#fcfcfc; border:1px solid #e1e1e1; box-shadow:3px 3px 3px #f4f4f4 inset; padding:0px 4px; margin-bottom:11px;}
+.sucess_ye{ padding:14px 12px; color:#999; line-height:28px; font-size:14px;}
+.sucess_ye span{ margin:0 36px;}
+.sucess_ye span i{ color:#666; padding:0 4px;}
+.sucess_cz{ background:#ffecf0 url(../../images/new_images/icon22.gif) no-repeat 65px center; width:82px; border-radius:3px; border:1px solid #ff5d7f; font-size:14px; color:#f47264; cursor:pointer; line-height:26px; overflow:hidden; padding:0;}
+.sucess_title{ border-bottom:1px solid #e1e1e1; line-height:42px; font-size:14px; color:#999;}
+.sucess_title span{ margin:0 8px 0 18px;}
+.sucess_title samp{ background:#fcf7d1; border:1px solid #e5debc; color:#666; height:26px; line-height:26px; padding:0 10px; display:inline-block; font-size:12px; }
+.sucess_box dd ul{ display:block; padding:15px 0 0 10px}
+.sucess_box dd li{ width:107px; float:left; margin-right:20px; height:30px; margin-bottom:20px; display:inline}
+.sucess_box dd li label{ height:30px; line-height:30px; display:block;}
+.sucess_box dd li label input{ float:left; margin-right:4px;}
+.sucess_box dd li label samp{  float:left; display:inline-block; width:90px; height:30px;}
+.sucess_box dd li img{ border:1px solid #c2c2c3; width:88px; height:28px; border-radius:3px}
+.sucess_btn2{ padding:28px 0 28px 92px}
+.pay_btn{ background:#f36948; color:#fff; line-height:50px; width:296px; text-align:center; border-radius:3px; font-size:16px; cursor:pointer; border:none}
+.pay_btn2{ background:#cccccc; color:#fff; line-height:50px; width:296px; text-align:center; border-radius:3px; font-size:16px; cursor:no-drop; border:none}
+
+
+

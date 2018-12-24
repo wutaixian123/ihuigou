@@ -1,0 +1,373 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>回购网</title>
+<link href="css/new_css/global.css" rel="stylesheet" type="text/css">
+<link href="css/new_css/huan.css" rel="stylesheet" type="text/css">
+<script src="js/new_js/jquery.js" type="text/javascript"></script>
+<script src="js/new_js/menu.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/new_js/jquery.jqzoom.js"></script>
+<script type="text/javascript" src="js/new_js/base.js"></script>
+</head>
+
+<body>
+<!--头部-->
+<div class="shortcut">
+  <div class="page2">
+    <div class="shortcut-left">
+      <ul>
+        <li class="item-more"><a href="javascript:void(0)"><span>&nbsp;</span><em>手机逛回购</em></a>
+          <div class="sub-nav">
+            <div><img src="images/new_images/shortcut_wx.gif" width="145" height="145" /></div>
+            <div>扫描下载手机客户端</div>
+          </div>
+        </li>
+        <li class="city"><span>当前：<span>广东省深圳市</span><a href="#">[切换城市]</a></span></li>
+      </ul>
+    </div>
+    <div class="shortcut-right">
+      <ul>
+        <li><a href="#">登录</a></li>
+        <li><a href="#">注册</a></li>
+        <li class="my-cart"><a href="#"><em>我的回购</em></a>
+          <div class="sub-cart"> <a href="#">我的订单</a> <a href="#">帐户中心</a> <a href="#">环保券<i>2</i>张</a> <a href="#">退出</a> </div>
+        </li>
+        <li class="item-daohang"><a href="#" class="item-daohang-nav">网站导航</a>
+          <div class="sub-nav2">
+            <ul>
+              <li>
+                <dl>
+                  <dt>主要频道</dt>
+                  <dd><a href="#">旧机回收</a></dd>
+                  <dd><a href="#">以旧换新</a></dd>
+                  <dd><a href="#">二手优品</a></dd>
+                </dl>
+              </li>
+              <li>
+                <dl>
+                  <dt>企业服务</dt>
+                  <dd><a href="#">企业代理</a></dd>
+                  <dd><a href="#">校园代理</a></dd>
+                </dl>
+              </li>
+              <li>
+                <dl>
+                  <dt>客户服务</dt>
+                  <dd><a href="#">新手引导</a></dd>
+                  <dd><a href="#">服务条款</a></dd>
+                  <dd><a href="#">新手引导</a></dd>
+                  <dd><a href="#">投诉建议</a></dd>
+                  <dd><a href="#">在线客服</a></dd>
+                </dl>
+              </li>
+              <div class="clear"></div>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>
+<div class="header">
+  <div class="page2">
+    <h1 class="logo"><a href="#"><img src="images/new_images/logo.png" width="179" height="52" /></a></h1>
+    <div class="nav"><a href="#"><span id="nav_xz">&nbsp;</span>闲置回收</a><a href="#"><span id="nav_hx">&nbsp;</span>旧机换新</a><a href="#" class="on"><span id="nav_es">&nbsp;</span>二手优品</a></div>
+  </div>
+</div>
+<!--头部-->
+
+<div class="contanier">
+  <div class="page2">
+    <div class="yp_bar"><img src="images/new_images/bar2.gif" /></div>
+    <div class="new_phone">
+      <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="92" height="126"><img src="images/new_images/new_icon.gif" /></td>
+          <td width="174" valign="middle"><a href="#"><img src="images/new_images/img18.gif" width="128" height="96"/></a></td>
+          <td width="470">魅族 MX5 16GB 银黑色 移动4G手机 双卡双待</td>
+          <td width="184">换新价 <em>￥1799.00</em></td>
+          <td><a href="#" class="genghuan">更换机型</a></td>
+        </tr>
+      </table>
+      <br />
+      <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="92" height="126"><img src="images/new_images/jiu.gif" /></td>
+          <td width="174" valign="middle"><a href="#"><img src="images/new_images/img18.gif" width="128" height="96"/></a></td>
+          <td width="470">iPhone 5S</td>
+          <td width="184">等待评估</td>
+          <td><a href="#" class="delete">删除</a></td>
+        </tr>
+      </table>
+    </div>
+    
+  </div>
+</div>
+
+<!--评估流程-->
+<div id="ahs_trade_body"> 
+  <script type="text/javascript">
+        $(document).ready(function(){
+		  $("#ahs_trade_body #step1_nav .btn_next").click(function(){
+	   $("#property_step2").show();
+	   $("#property_step1").hide();
+	   $("#speed2").show();
+	   $("#speed1").hide();
+	  
+	 });
+		
+	   $("#ahs_trade_body #step2_nav .btn_next").click(function(){
+	   $("#property_step3").show();
+	   $("#property_step2").hide();
+	   $("#speed3").show();
+	   $("#speed2").hide();
+	 });
+		
+		$("#ahs_trade_body #step2_nav .btn_back").click(function(){
+	   $("#property_step1").show();
+	   $("#property_step2").hide();
+	   $("#speed1").show();
+	   $("#speed2").hide();
+	 });
+	  
+	  $("#ahs_trade_body #step3_nav .btn_back").click(function(){
+	   $("#property_step2").show();
+	   $("#property_step3").hide();
+	   $("#speed2").show();
+	   $("#speed3").hide();
+	 });
+		 	
+		});
+      </script>
+  <div id="ahs_property_head">
+    <p>开始评估你的手机，只需3步，获得产品精准报价</p>
+    <!--步骤一-->
+    <div class="speed" id="speed1"><img src="images/new_images/step1.gif" /></div>
+    <!--步骤一--> 
+    <!--步骤二-->
+    <div class="speed" id="speed2"><img src="images/new_images/step2.gif" /></div>
+    <!--步骤二--> 
+    <!--步骤三-->
+    <div class="speed" id="speed3"><img src="images/new_images/step3.gif" /></div>
+    <!--步骤三--> 
+  </div>
+  <div id="ahs_property_body"> 
+    <!--第一步-->
+    <div id="property_step1">
+      <dl>
+        <dd>
+          <div class="property_title">
+            <h3>版本/购买渠道</h3>
+          </div>
+          <ul>
+            <li class="selected"><div class="pro_div"><span class="property_value"><i>行货</i><ins>中国大陆发售</ins></span><span class="gou"></span></div></li>
+            <li class=""><div class="pro_div"><span class="property_value"><i>港行</i><ins>中国香港发售</ins></span><span class="gou"></span></div></li>
+            <li class=""><div class="pro_div"><span class="property_value"><i>电信版</i><ins>CDMA制式</ins></span><span class="gou"></span></div></li>
+            <li class=""><div class="pro_div"><span class="property_value"><i>其他国家无锁</i><ins>美日韩等地区发售</ins></span><span class="gou"></span></div></li>
+            <li class=""><div class="pro_div"><span class="property_value"><i>其他国家有锁</i><ins>需要“卡贴解锁”才能正常通话</ins></span><span class="gou"></span></div></li>
+            <li class="last boom"><div class="pro_div"><span class="property_value"><i>其他国家无法解锁</i><ins>使用卡贴也无法解锁，或无法通话，俗称“砖头”</ins></span><span class="gou"></span></div></li>
+            <div class="clear"></div>
+          </ul>
+        </dd>
+        <dd>
+          <div class="property_title">
+            <h3>剩余保修期</h3>
+          </div>
+          <ul>
+            <li class="selected"><div class="pro_div"><span class="property_value"><i>剩余6个月以上</i></span><span class="gou"></span></div></li>
+            <li class=""><div class="pro_div"><span class="property_value"><i>剩余3-6个月以上</i></span><span class="gou"></span></div></li>
+            <li class=""><div class="pro_div"><span class="property_value"><i>剩余半个月-3个月</i></span><span class="gou"></span></div></li>
+            <li class="last boom"><div class="pro_div"><span class="property_value"><i>剩余15天以内、水货无保修</i></span><span class="gou"></span></div> </li>
+            <div class="clear"></div>
+          </ul>
+        </dd>
+        <dd>
+          <div class="property_title">
+            <h3>开机情况</h3>
+          </div>
+          <ul>
+            <li class=""><div class="pro_div"><span class="property_value"><i>能正常开机</i><ins>正常开机，无重启、死机、定屏、发烫、无法进入桌面等现象</ins></span><span class="gou"></span></div></li>
+            <li class=""><div class="pro_div"><span class="property_value"><i>无法正常开机使用</i><ins>开机出现重启、死机、定屏、发烫、无法进入桌面</ins></span><span class="gou"></span></div></li>
+            <li class="last boom"><div class="pro_div"><span class="property_value"><i>无法开机</i><ins>开机无反应，链接电脑、充电器等外置USB接口无</ins></span><span class="gou"></span></div></li>
+            <div class="clear"></div>
+          </ul>
+          
+        </dd>
+        <dd>
+          <div class="property_title">
+            <h3>机身内存</h3>
+          </div>
+          <ul>
+            <li class=""><div class="pro_div"><span class="property_value"><i>16G</i></span><span class="gou"></span></div></li>
+            <li class=""><div class="pro_div"><span class="property_value"><i>32G</i></span><span class="gou"></span></div></li>
+            <li class="last boom"><div class="pro_div"><span class="property_value"><i>64G</i></span><span class="gou"></span></div></li>
+            <div class="clear"></div>
+          </ul>
+        </dd>
+        <dd>
+          <div class="property_title">
+            <h3>维修记录</h3>
+          </div>
+          <ul>
+            <li class=""><div class="pro_div"><span class="property_value"><i>维修记录</i><ins></ins></span><span class="gou"></span></div></li>
+            <li class=""><div class="pro_div"><span class="property_value"><i>维修记录</i><ins>拆过机、但没有进行维修</ins></span><span class="gou"></span></div></li>
+            <li class=""><div class="pro_div"><span class="property_value"><i>维修过小部件，未涉及主板</i><ins>有拆机维修，未涉及到主板，仅涉及听筒、话筒、接口等小零部件</ins></span><span class="gou"></span></div></li>
+            <li class=""><div class="pro_div"><span class="property_value"><i>有大维修，涉及到主板</i><ins>修理过主板及大部分零件</ins></span><span class="gou"></span></div></li>
+           <li class="last boom"><div class="pro_div"><span class="property_value"><i>报废</i><ins></ins></span><span class="gou"></span></div></li>
+           <div class="clear"></div>
+
+          </ul>
+        </dd>
+        <div id="step1_nav" class="property_nav">
+                <div id="btn_step1_next" class="btn_next">下一步</div>
+              </div>
+      </dl>
+    </div>
+    <!--第一步--> 
+    <!--第二步-->
+    <div id="property_step2" class="hide">
+      <dl>
+        <dd>
+          <div class="property_title">
+            <h3>功能情况（可多选或不选）</h3>
+          </div>
+          <ul>
+            <li class=""><div class="pro_div"><span class="property_value"><i>有进水</i></span> <span class="gou"></span></div></li>
+            <li class=""><div class="pro_div"><span class="property_value"><i>信号不稳定</i></span> <span class="gou"></span></div></li>
+            <li class=""><div class="pro_div"><span class="property_value"><i>无信号</i></span> <span class="gou"></span></div></li>
+            <li class=""><div class="pro_div"><span class="property_value"><i>蓝牙wifi功能不正常</i></span> <span class="gou"></span></div></li>
+            <li class=""><div class="pro_div"><span class="property_value"><i>蓝牙wifi无法打开</i></span> <span class="gou"></span></div></li>
+            <li class=""><div class="pro_div"><span class="property_value"><i>照相功能不正常</i></span> <span class="gou"></span></div></li>
+            <li class=""><div class="pro_div"><span class="property_value"><i>相机故障</i></span> <span class="gou"></span></div></li>
+            <li class=""><div class="pro_div"><span class="property_value"><i>感光功能不正常</i></span> <span class="gou"></span></div></li>
+            <div class="clear"></div>
+          </ul>
+        </dd>
+      </dl>
+      <div id="step2_nav" class="property_nav">
+        <div id="btn_step2_back" class="btn_back">< 返回上一步</div>
+        <div id="btn_step2_next" class="btn_next">都没问题，跳过  ></div>
+      </div>
+    </div>
+    <!--第二步--> 
+    <!--第三步-->
+    <div id="property_step3" class="hide">
+      <dl>
+        <dd>
+          <div class="property_title">
+            <h3>iCloud账号是否可以解除</h3>
+          </div>
+          <ul>
+            <li class="selected"><div class="pro_div"><span class="property_value"><i>iCloud账号是否可以解除</i><ins>iCloud账号是否可以解除</ins></span><span class="gou"></span></div></li>
+            <li class="last boom"><div class="pro_div"><span class="property_value"><i>不可以</i><ins>不可以</ins></span><span class="gou"></span></div></li>
+            
+            <div class="clear"></div>
+          </ul>
+        </dd>
+        <dd>
+          <div class="property_title">
+            <h3>显示屏</h3>
+          </div>
+          <ul>
+            <li class="selected"><div class="pro_div"><span class="property_value"><i>显示完好</i></span><span class="gou"></span></div></li>
+            <li class=""><div class="pro_div"><span class="property_value"><i>显示有瑕疵</i></span><span class="gou"></span></div></li>
+            <li class=""><div class="pro_div"><span class="property_value"><i>显示屏为高仿屏</i></span><span class="gou"></span></div></li>
+            <li class="last boom"><div class="pro_div"><span class="property_value"><i>显示不正常或损伤</i></span><span class="gou"></span></div></li>
+            <div class="clear"></div>
+          </ul>
+        </dd>
+        <dd>
+          <div class="property_title">
+            <h3>触摸屏功能</h3>
+          </div>
+          <ul>
+            <li class=""><div class="pro_div"><span class="property_value"><i>触摸功能正常完好</i><ins>正常开机，无重启、死机、定屏、发烫、无法进入桌面等现象</ins></span><span class="gou"></span></div></li>
+            <li class=""><div class="pro_div"><span class="property_value"><i>有碎角</i><ins>开机出现重启、死机、定屏、发烫、无法进入桌面</ins></span><span class="gou"></span></div></li>
+            <li class=""><div class="pro_div"><span class="property_value"><i>触摸屏破裂，功能正常</i></span><span class="gou"></span></div></li>
+ <li class="last boom"><div class="pro_div"><span class="property_value"><i>触摸失灵，或功能不正常</i></span><span class="gou"></span></div></li>
+            <div class="clear"></div>
+          </ul>
+        </dd>
+        <dd>
+          <div class="property_title">
+            <h3>触摸失灵，或功能不正常</h3>
+          </div>
+          <ul>
+            <li class=""><div class="pro_div"><span class="property_value"><i>功能正常</i></span><span class="gou"></span></div></li>
+            <li class="last boom"><div class="pro_div"><span class="property_value"><i>功能不正常</i></span><span class="gou"></span></div></li>
+            <div class="clear"></div>
+          </ul>
+        </dd>
+        <dd>
+          <div class="property_title">
+            <h3>物品成色</h3>
+          </div>
+          <ul>
+            <li class=""><div class="pro_div"><span class="property_value"><i>全新</i><ins></ins></span><span class="gou"></span></div></li>
+            <li class=""><div class="pro_div"><span class="property_value"><i>9.5成新</i><ins>拆过机、但没有进行维修</ins></span><span class="gou"></span></div></li>
+            <li class=""><div class="pro_div"><span class="property_value"><i>8-9成新</i><ins>有拆机维修，未涉及到主板，仅涉及听筒、话筒、接口等小零部件</ins></span><span class="gou"></span></div></li>
+            <li class=""><div class="pro_div"><span class="property_value"><i>6-7成新</i><ins>修理过主板及大部分零件</ins></span><span class="gou"></span></div></li>
+           <li class="last boom"><div class="pro_div"><span class="property_value"><i>5成新</i><ins></ins></span><span class="gou"></span></div></li>
+           <div class="clear"></div>
+
+          </ul>
+        </dd>
+        
+      </dl>
+      <div id="step3_nav" class="property_nav">
+        <div id="btn_step3_back" class="btn_back">< 返回上一步</div>
+        <div id="btn_step3_next" class="btn_next">查看价格 ></div>
+      </div>
+    </div>
+    <!--、
+    】第三步--> 
+  </div>
+</div>
+<!--评估流程--> 
+
+
+<div class="footer">
+  <div class="page2">
+    <dl class="foot_list1">
+      <dt>关于我们</dt>
+      <dd><a href="#">关于回购网</a></dd>
+      <dd><a href="#">联系我们</a></dd>
+      <dd><a href="#">人才招聘</a></dd>
+    </dl>
+    <dl class="foot_list2">
+      <dt>服务</dt>
+      <dd><a href="#">服务条款</a></dd>
+      <dd><a href="#">投诉建议</a></dd>
+      <dd><a href="#">网站地图</a></dd>
+    </dl>
+    <dl class="foot_list3">
+      <dt>客服热线</dt>
+      <dd>
+        <p><img src="images/new_images/tel.png" /></p>
+        <div><a href="#" class="rk1">大客户入口</a><a href="#" class="rk2">合作商入口</a></div>
+      </dd>
+    </dl>
+    <dl class="foot_list4">
+      <dt>关注我们</dt>
+      <dd class="sina"><a href="#">&nbsp;</a></dd>
+      <dd class="tecent"><a href="#">&nbsp;</a></dd>
+      <dd class="weixin"><a href="#">&nbsp;</a></dd>
+    </dl>
+    <div class="clear"></div>
+    <div class="friend_link"><span>友情链接</span><a href="#">中关村在线</a><a href="#">安徽电信</a><a href="#">百脑汇</a><a href="#">太平洋二手论坛</a></div>
+    <div class="statist">
+      <p><em>2009-2014 Copyright Reserved 2009-2014 @</em>版权归回购网所有ICP备案：<span>粤ICP备10071783号</span><a href="#">站长统计</a></p>
+      <div> <a href="#"><img src="images/new_images/static_icon1.jpg" width="146" height="51"/></a><a href="#"><img src="images/new_images/static_icon2.jpg" width="146" height="51"/></a><a href="#"><img src="images/new_images/static_icon3.jpg" width="146" height="51" /></a><a href="#"><img src="images/new_images/static_icon4.jpg" width="139" height="49" /></a><a href="#"><img src="images/new_images/static_icon5.jpg" width="124" height="47"/></a></div>
+    </div>
+  </div>
+</div>
+<!--[if lte IE 6]>
+<script src="js/new_js/png.js" type="text/javascript"></script>
+<script type="text/javascript">
+	DD_belatedPNG.fix('img,.banner ul, li, dl, dt, dd, span, em, div, i, samp, a, b, .kuang');
+</script>
+<![endif]-->
+</body>
+</html>

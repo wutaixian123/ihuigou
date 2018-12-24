@@ -1,0 +1,107 @@
+@charset "utf-8";
+/* CSS Document */
+*{ margin:0; padding:0;}
+body{  font-size:12px; color:#666;font-family:"微软雅黑";}
+h1,h2,h3,h4,h5{ font-size:12px; margin:0; padding:0}
+ul,li,dl,dt,dd{ list-style:none; margin:0; padding:0}
+a {cursor:pointer; text-decoration:none; color:#666}
+.clear{ clear:both; width:100%; height:0; overflow:hidden;}
+img{ border:0;}
+em{ font-style:normal}
+.page{ width:1100px; margin:0 auto}
+.fl{ float:left}
+.fr{ float:right}
+
+
+/*-----银行卡管理---*/
+.eject1{ background:#fff; padding:0 10px; width:408px;}
+.eject_title{ height:44px; line-height:44px; border-bottom:1px solid #ff8000; position:relative}
+.eject_title span{ font-size:16px; color:#ff8000}
+.eject_title a{ position:absolute; right:10px; top:10px}
+.eject_main{ padding:20px 0;}
+
+.c1 span{ width:80px; display:inline-block; height:29px; line-height:29px; margin:0 18px 0 0; text-align:right}
+.c1 .input_txt1{ background:url(../../images/c1_bg1.gif) no-repeat; width:262px; height:27px; line-height:27px; border:none; padding:1px 2px;}
+.c1 .input_btn1{ background:url(../../images/btn6.gif) no-repeat; border:none; width:85px; height:30px; color:#fff; text-align:center; line-height:30px; font-size:14px;font-family:"微软雅黑"; margin:0 16px 0 0}
+.c2 .input_btn2{ background:url(../../images/icon_hq.gif) no-repeat; width:85px; height:20px; line-height:20px; text-align:center; border:none}
+.c1 samp{ color:#f00}
+
+.eject2{ background:#fff; padding:0 10px; width:504px;}
+.eject_yz{ height:112px; padding:28px 0 0 0}
+.eject_yz p{ text-align:center; margin-bottom:28px;}
+.eject_yz p em{ color:#ff6600}
+.eject_yz div{ text-align:center;}
+.eject_yz .input_btn1{ background:url(../../images/btn6.gif) no-repeat; border:none; width:85px; height:30px; color:#fff; text-align:center; line-height:30px; font-size:14px;font-family:"微软雅黑"; margin:0 16px 0 0}
+
+.eject_sj{ height:234px; padding:28px 0 0 0}
+.eject_sj2{ height:180px; padding:28px 0 0 0}
+.eject_sj3{ height:240px; padding:28px 0 0 0}
+.c2{height:24px; line-height:24px;padding:4px 0 4px 98px}
+.c1_height{ height:22px; line-height:22px; padding:0 0 0 98px;}
+.c1_height samp{ color:#f00}
+.c1 em{ color:#0099cc}
+.c1 em i{ color:#ff0000; font-style:normal; padding:0 4px;}
+/*添加银行卡*/
+.bank{ background:#fff; padding:0 10px;  width:780px;}
+.bank_list{ margin:30px 0 0 60px;}
+.bank_list li.item{ float:left; width:144px; height:38px; line-height:38px; margin:0 28px 10px 0; display:inline}
+.bank_list li input{ float:left; width:14px; margin:13px 4px 0 0; display:inline}
+.bank_list li lable{ float:left; width:125px;}
+.bank_list li.item img{ border:1px solid #ccc; width:123px; height:36px;}
+
+
+.speed{ background:url(../../images/speed.gif) no-repeat; height:14px; width:120px; float:left; margin:8px 0 8px 100px;}
+.speed span{ padding:0; margin:0; height:14px; float:left; margin:0 1px 0 0}
+.account_status li .account_status_det .descript .descript_color{ color:#fe9900; margin:0 38px 0 0}
+
+
+
+.contact_list { margin:0 0 15px 0; width: 800px; text-align: left;}
+.contact_list li {overflow: hidden;float: left;}
+.contact_list li  span{ float:left}
+.contact_text {width: 88px; height: 31px; text-align: right; line-height: 31px; padding-right: 12px;}
+.contact_texts {width: 360px; height: 31px; line-height: 31px; overflow: hidden;}
+.contact_texts span {height: 31px; line-height: 31px; overflow: hidden; float: left;}
+.img_1 {width: 5px;}
+.img_2 {background:url(../../images/in_2.gif) repeat-x; padding:1px 0 0 0}
+.img_2 input {border: 0px; width: 175px; height: 28px; line-height:28px;}
+.img_2_area {background: url(../../images/in_2.gif) repeat-x; width: 350px; padding:1px 0 0 0 }
+.img_2_area input {border: 0px;  width: 350px; height: 28px; line-height:28px;}
+.img_3 {padding: 0px 10px; color: rgb(106, 106, 106);}
+.img_4 {background: url(../../images/in_2.gif) repeat-x; padding:1px 0 0 0}
+.img_4 input {border: 0px; width: 236px; height: 28px; line-height:28px;}
+.img_5 {background: url(../../images/in_2.gif) repeat-x; padding:1px 0 0 0}
+.img_5 input {border: 0px; background:url(../../images/search_btn.gif) no-repeat; width:37px; height: 28px; line-height:28px; cursor:pointer}
+
+
+
+
+
+.c4{ margin-bottom:16px; clear:both}
+.c4 span{ width:85px; text-align:right; display:inline-block; padding-right:20px; float:left}
+.c4 .input_txt1{ background:url(../../images/input_txt.gif) no-repeat; border:none; width:285px; height:31px; float:left}
+.c4 .input_txt2{ background:url(../../images/txt2.gif) no-repeat; border:none; width:96px; height:29px; float:left}
+.c4 .input_btn1{ background:url(../../images/btn6.gif) no-repeat; border:none; width:85px; height:30px; color:#fff; text-align:center; line-height:30px; float:left}
+.c4 textarea{ background:url(../../images/txt1.gif) no-repeat; border:none; width:330px; height:83px; padding:3px; float:left}
+.c4 em{ display:inline-block; line-height:30px; padding:0 6px}
+
+
+
+.tu_box{ padding:18px; background:#fff; width:752px; height:340px; position:relative}
+.slideshow { clear: both; }
+.slideshow li { position: relative; }
+.slidebar li { background:url(../../images/yuan_icon2.jpg) no-repeat; display:inline-block; width: 28px; height: 28px; line-height: 28px; text-align: center; font-size: 12px; cursor: pointer;_float:left}
+.slidebar li.on { background: url(../../images/yuan_icon1.jpg) no-repeat;color: #000; }
+.frame { background: none; border: 0px solid #fff; margin-bottom: 0px; }
+.temp { margin: 0; }
+.slidebar { position: absolute; bottom:-60px; left: 4px; }
+.block { margin: 0;position: relative; }
+#frameHlicAe { margin: 0px !important; border: 0px !important; }
+.comiis_wrap960, .comiis_wrapad { margin: 0 auto; width:752px; }
+.comiis_wrapad {}
+.comiis_wrapad img { float: left; margin-top: 0px; }
+#slidesImgs li { width: 752px; height: 280px; display: none; position:relative }
+#slidesImgs li span{ position:absolute; left:0; bottom:-26px; display:block; z-index:1000; line-height:26px;}
+.tu_box_btn{ width:52px; height:26px; position:absolute; right:20px; bottom:28px}
+.tu_box_btn a{ background:url(../../images/yuan_icon3.jpg) no-repeat; display:block; text-align:center; width:52px; height:26px; line-height:26px;}
+.tu_box_btn a:hover{ color:#ffd58d}
